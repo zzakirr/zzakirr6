@@ -1,0 +1,15 @@
+1. Verilmiş metnde telefon nomrelerini tapan regex.Telefon nomresi (+994)055-497-83-03 seklinde olmalidir , son videoda daha etrafli izah etmisem ev tapsiriqlarini
+
+/\(\+994\)0[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}/gm
+
+2.Verilmis yazinin umumilikde email-dirse secsin
+
+/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}/gm
+
+Verilmis yazi umumilikde sayt adidirsa secsin 
+
+/[A-Za-z0-9._%+-]+\.[A-Za-z0-9]{2,6}/gm
+
+Verilmis yazinin icindeki riyazi ifadeleri tapan regex (4+5=9 ve s.)
+
+/(-?[0-9]+[\+\-\/\*\%][\(?-?[0-9]+\)?=?-?[0-9]+)/gm
